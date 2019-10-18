@@ -13,6 +13,15 @@ class Genre
   end
 
   def save
-    @@all << self 
+    @@all << self
   end
+
+  def self.destroy_all
+    @@all.clear
+  end
+
+  def self.create(genre)
+    new_genre = Genre.new(genre)
+    new_genre
+  end 
 end

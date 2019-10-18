@@ -30,7 +30,8 @@ class Artist
   end
 
   def add_song(new_song)
-    Song.new(new_song, self)
+    very_new_song = Song.new(new_song, self)
+    very_new_song
   end
   ###End of Instance Methods###
 end

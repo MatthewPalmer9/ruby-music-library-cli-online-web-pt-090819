@@ -32,7 +32,8 @@ class Artist
   end
 
   def add_song(song)
-    new_song = Song.new(song, self)
+    new_song = Song.new(song)
+    new_song.self == artist
     binding.pry
   end
   ###End of Instance Methods###

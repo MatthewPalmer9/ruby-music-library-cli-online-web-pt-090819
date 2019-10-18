@@ -23,6 +23,6 @@ class Song
   def self.create(song)
     new_song = Song.new(song)
     new_song
-    save
+    class.all.save
   end
 end

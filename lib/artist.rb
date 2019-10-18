@@ -31,7 +31,7 @@ class Artist
 
   def add_song(new_song)
     song = Song.new(new_song)
-    @songs << song
+    song.artist == self
   end
   ###End of Instance Methods###
 end

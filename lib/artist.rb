@@ -9,6 +9,7 @@ class Artist
     save
   end
 
+  ###Beginning of class methods###
   def self.all
     @@all
   end
@@ -17,12 +18,20 @@ class Artist
     @@all.clear
   end
 
-  def save
-    @@all << self
-  end
-
   def self.create(artist)
     new_artist = Artist.new(artist)
     new_artist
   end
+  ###End of Class Methods###
+
+  ###Beginning of Instance Methods###
+  def save
+    @@all << self
+  end
+
+  def add_song(song)
+    new_song = Song.new(song)
+    new_song.artist = self 
+  end
+  ###End of Instance Methods###
 end

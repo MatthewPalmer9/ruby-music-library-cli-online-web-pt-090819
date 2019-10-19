@@ -51,7 +51,10 @@ class Artist
   end
 
   def genres
-    new_array = [] 
+    new_array = []
+    @songs.each(){|song|
+      
+    }
   end
   ###End of Instance Methods###
 end

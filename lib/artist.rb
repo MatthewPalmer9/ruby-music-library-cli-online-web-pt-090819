@@ -57,8 +57,9 @@ class Artist
         nil
       else
         new_array << song.genre
-      end 
+      end
     }
+    new_array
   end
   ###End of Instance Methods###
 end

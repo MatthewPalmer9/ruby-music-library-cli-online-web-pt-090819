@@ -6,6 +6,6 @@ class MusicImporter
   end
 
   def files
-    Dir.entries(@path).select! {entry}
+    Dir.entries(@path).select! {entr}
   end
 end

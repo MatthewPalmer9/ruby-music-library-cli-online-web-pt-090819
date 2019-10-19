@@ -35,7 +35,7 @@ class Artist
     new_song = Song.new(song)
     #new_song.artist = self
     new_song.artist = self.name
-    binding.pry
+    #binding.pry
   end
   ###End of Instance Methods###
 end

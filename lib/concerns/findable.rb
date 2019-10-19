@@ -2,7 +2,7 @@ module Concerns
 
   module Findable
     def find_by_name(name)
-      self.class.all.find(){|e|
+      self.all.find(){|e|
         if e.name == name
           name
         end

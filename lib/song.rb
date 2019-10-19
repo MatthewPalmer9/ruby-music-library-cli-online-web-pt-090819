@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist, :genre
 
@@ -10,6 +12,7 @@ class Song
     save
   end
 
+  ###Beginning of Class Maethods###
   def self.all
     @@all
   end
@@ -18,13 +21,19 @@ class Song
     @@all.clear
   end
 
-  def save
-    @@all << self
-  end
-
   def self.create(song)
     new_song = Song.new(song)
     new_song
+  end
+
+  def self.find_by_name(song_name)
+    binding.pry
+  end
+###End of Class Methods###
+
+###Beginning of Instance Methods###
+  def save
+    @@all << self
   end
 
   def artist=(artist)
@@ -36,4 +45,5 @@ class Song
     @genre = genre
     genre.songs << self if !genre.songs.include?(self)
   end
+  ###End of Instance Methods###
 end

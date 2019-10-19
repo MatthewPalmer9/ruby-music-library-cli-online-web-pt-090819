@@ -39,7 +39,8 @@ class Song
       song_name
     else
       new_song = Song.new(song_name)
-      self.all << new_song.name
+      self.all << new_song
+      binding.pry 
     end
   end
 ###End of Class Methods###

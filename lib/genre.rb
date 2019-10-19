@@ -34,12 +34,12 @@ class Genre
     @new_array = []
 
     @songs.each(){|song|
-      if @new_array.include?(song.genre)
+      if @new_array.include?(artist.genre)
         nil
       else
-        @new_array << song.genre
+        @new_array << artist.genre
       end
     }
-    @new_array 
+    @new_array
   end
 end

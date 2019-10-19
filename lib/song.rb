@@ -40,6 +40,7 @@ class Song
 
   def self.new_from_filename(filename)
     array = filename.split(" - ")
+    binding.pry
   end
 ###End of Class Methods###
 

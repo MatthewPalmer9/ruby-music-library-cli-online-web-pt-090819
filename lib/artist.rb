@@ -53,7 +53,11 @@ class Artist
   def genres
     new_array = []
     @songs.each(){|song|
-      if new_array song.
+      if new_array.include?(song.genre)
+        nil
+      else
+        new_array << song.genre
+      end 
     }
   end
   ###End of Instance Methods###

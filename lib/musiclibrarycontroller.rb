@@ -20,7 +20,7 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
 
-    while input != 'exit'
+    if input == 'exit'
       case input
         when "list songs"
           list_songs

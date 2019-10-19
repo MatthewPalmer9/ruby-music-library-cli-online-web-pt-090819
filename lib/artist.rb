@@ -1,7 +1,7 @@
 require 'pry'
 
 class Artist
-  attr_accessor :name, :song
+  attr_accessor :name, :song, :genre
 
   @@all = []
 
@@ -49,5 +49,9 @@ class Artist
     song
     #binding.pry
   end
+
+  def genres
+    @genre
+  end 
   ###End of Instance Methods###
 end

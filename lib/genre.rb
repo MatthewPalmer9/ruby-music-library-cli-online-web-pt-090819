@@ -1,8 +1,9 @@
 require 'pry'
+require_relative "../lib/concerns/findable.rb"
 
 class Genre
   attr_accessor :name
-  #extend Concerns::Findable
+  extend Concerns::Findable
 
   @@all = []
 

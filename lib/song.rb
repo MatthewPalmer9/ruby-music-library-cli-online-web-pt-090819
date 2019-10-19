@@ -30,9 +30,8 @@ class Song
     self.all.each(){|song|
       if song.name == song_name
         song_name
-      end 
+      end
     }
-    binding.pry
   end
 ###End of Class Methods###
 

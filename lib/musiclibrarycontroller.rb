@@ -1,3 +1,5 @@
+require_relative 
+
 class MusicLibraryController
   attr_accessor :path
 

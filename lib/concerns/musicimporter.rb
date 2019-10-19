@@ -10,7 +10,7 @@ class MusicImporter
   end
 
   def import
-    self.file.each(){|filename|
+    self.files.each(){|filename|
       Song.create_from_filename(filename)
     }
   end

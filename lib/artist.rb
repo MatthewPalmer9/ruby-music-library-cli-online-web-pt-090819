@@ -39,7 +39,9 @@ class Artist
     end
     if @songs.include?(song)
       nil
-    else 
+    else
+      @song << song
+    end 
     #binding.pry
   end
   ###End of Instance Methods###

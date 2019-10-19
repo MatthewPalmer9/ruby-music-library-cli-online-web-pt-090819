@@ -33,7 +33,10 @@ class Artist
 
   def add_song(song)
     if song.artist == nil
-      song.artist = self 
+      song.artist = self
+    else
+      nil
+    end 
     #binding.pry
   end
   ###End of Instance Methods###

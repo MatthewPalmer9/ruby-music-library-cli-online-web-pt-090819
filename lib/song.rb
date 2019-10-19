@@ -9,7 +9,6 @@ class Song
     @name = name
     self.artist = artist if artist != nil
     self.genre = genre if genre != nil
-    save
   end
 
   ###Beginning of Class Maethods###
@@ -23,6 +22,7 @@ class Song
 
   def self.create(song)
     new_song = Song.new(song)
+    new_song.save
     new_song
   end
 
@@ -35,9 +35,7 @@ class Song
   end
 
   def self.find_or_create_by_name(song_name)
-    if self.find_by_name(song_name)
-      binding.pry
-    end
+    self.find_by_name(song_name) || self.create(song_name)
   end
 ###End of Class Methods###
 

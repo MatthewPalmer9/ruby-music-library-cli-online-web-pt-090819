@@ -39,7 +39,7 @@ class Song
       song_name.name
     else
       new_song = Song.new(song_name)
-      self.all << new_song
+      self.all << new_song.name
     end
   end
 ###End of Class Methods###

@@ -1,4 +1,4 @@
-require_relative "../"
+require_relative "../lib/concerns/findable.rb"
 
 class MusicLibraryController
   attr_accessor :path

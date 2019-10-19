@@ -5,6 +5,7 @@ class Genre
 
   def initialize(name)
     @name = name
+    @songs = []
     save
   end
 
@@ -23,5 +24,5 @@ class Genre
   def self.create(genre)
     new_genre = Genre.new(genre)
     new_genre
-  end 
+  end
 end

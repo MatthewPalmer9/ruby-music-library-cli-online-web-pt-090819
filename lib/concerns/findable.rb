@@ -4,7 +4,7 @@ module Concerns
     def find_by_name(name)
       self.class.all.find(){|song|
         if song.name == song_name
-          song
+          name
         end
       }
     end

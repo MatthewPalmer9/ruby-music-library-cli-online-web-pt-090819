@@ -36,7 +36,10 @@ class Artist
       song.artist = self
     else
       nil
-    end 
+    end
+    if @songs.include?(song)
+      nil
+    else 
     #binding.pry
   end
   ###End of Instance Methods###

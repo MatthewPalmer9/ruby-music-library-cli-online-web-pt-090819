@@ -7,5 +7,7 @@ module Concerns::Findable
     }
   end
 
-  
+  def find_or_create_by_name(song_name)
+    find_by_name(song_name) || self.create(song_name)
+  end
 end

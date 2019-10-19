@@ -1,7 +1,7 @@
 require 'pry'
 
 class Artist
-  attr_accessor :name, :songs
+  attr_accessor :name, :song
 
   @@all = []
 
@@ -42,7 +42,7 @@ class Artist
     else
       @song << song
     end
-    song 
+    song
     #binding.pry
   end
   ###End of Instance Methods###

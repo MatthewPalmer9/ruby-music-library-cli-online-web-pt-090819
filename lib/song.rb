@@ -38,7 +38,9 @@ class Song
     self.find_by_name(song_name) || self.create(song_name)
   end
 
-  def self.new_from_filename(file_name)
+  def self.new_from_filename(filename)
+    array = filename.split(" - ")
+  end
 ###End of Class Methods###
 
 ###Beginning of Instance Methods###

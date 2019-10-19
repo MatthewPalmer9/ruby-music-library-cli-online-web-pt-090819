@@ -2,8 +2,8 @@ module Concerns
 
   module Findable
     def find_by_name(name)
-      self.class.all.find(){|song|
-        if song.name == song_name
+      self.class.all.find(){|e|
+        if e.name == name
           name
         end
       }

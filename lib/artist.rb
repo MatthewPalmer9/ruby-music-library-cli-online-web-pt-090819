@@ -1,7 +1,7 @@
 require 'pry'
 
 class Artist
-  attr_accessor :name, :song, :genre
+  attr_accessor :name, :song,
 
   @@all = []
 
@@ -51,7 +51,7 @@ class Artist
   end
 
   def genres
-    
+    new_array = [] 
   end
   ###End of Instance Methods###
 end

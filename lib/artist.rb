@@ -31,8 +31,9 @@ class Artist
     @@all << self
   end
 
-  def add_song(new_song)
-    if 
+  def add_song(song)
+    if song.artist == nil
+      song.artist = self 
     #binding.pry
   end
   ###End of Instance Methods###

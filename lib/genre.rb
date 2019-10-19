@@ -1,3 +1,5 @@
+require 'pry'
+
 class Genre
   attr_accessor :name
 
@@ -33,12 +35,13 @@ class Genre
   def artists
     @new_array = []
 
-    @songs.each(){|song|
-      if @new_array.include?(artist.genre)
-        nil
-      else
-        @new_array << artist.genre
-      end
+    @songs.each(){|artist|
+      binding.pry
+      # if @new_array.include?(genre.artist)
+      #   nil
+      # else
+      #   @new_array << genre.artist
+      # end
     }
     @new_array
   end

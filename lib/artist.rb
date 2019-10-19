@@ -1,5 +1,5 @@
 require 'pry'
-
+require_relative "../config/environment.rb"
 
 class Artist
   attr_accessor :name, :song

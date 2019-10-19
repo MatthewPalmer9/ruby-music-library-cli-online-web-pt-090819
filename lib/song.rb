@@ -38,7 +38,8 @@ class Song
     if self.find_by_name(song_name)
       song_name.name
     else
-      self.all << Song.new(song_name)
+      new_song = Song.new(song_name)
+      self.all << new_song
     end
   end
 ###End of Class Methods###

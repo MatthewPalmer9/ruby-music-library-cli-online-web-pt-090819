@@ -51,7 +51,7 @@ class Artist
   end
 
   def genres
-    @genre
-  end 
+    
+  end
   ###End of Instance Methods###
 end

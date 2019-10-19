@@ -40,6 +40,10 @@ class Song
 
   def self.new_from_filename(filename)
     array = filename.split(" - ")
+
+    artist_name = array[0]
+    song_name = array[1]
+    genre
     binding.pry
   end
 ###End of Class Methods###

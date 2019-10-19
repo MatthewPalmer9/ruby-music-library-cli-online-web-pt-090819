@@ -44,6 +44,8 @@ class Song
     artist_name = array[0]
     song_name = array[1]
     genre_name = array[2].split(".mp3").join
+
+    
     binding.pry
   end
 ###End of Class Methods###

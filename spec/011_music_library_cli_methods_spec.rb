@@ -1,5 +1,4 @@
 require "spec_helper"
-require_relative "../config/environment.rb"
 
 describe "MusicLibraryController - CLI Methods" do
   let(:music_library_controller) { MusicLibraryController.new("./spec/fixtures/mp3s") }

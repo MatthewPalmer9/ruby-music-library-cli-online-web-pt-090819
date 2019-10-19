@@ -60,6 +60,7 @@ class Artist
       end
     }
     new_array
+    binding.pry
   end
   ###End of Instance Methods###
 end

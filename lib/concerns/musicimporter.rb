@@ -6,6 +6,6 @@ class MusicImporter
   end
 
   def files
-    @
+    Dir.
   end
 end

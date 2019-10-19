@@ -1,7 +1,8 @@
-require_relative 
+require_relative "../"
 
 class MusicLibraryController
   attr_accessor :path
+  extend Concerns::Findable
 
   def initialize(path = "./db/mp3s")
     @path = path

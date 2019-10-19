@@ -29,4 +29,17 @@ class Genre
     new_genre = Genre.new(genre)
     new_genre
   end
+
+  def artists
+    @new_array = []
+
+    @songs.each(){|song|
+      if @new_array.include?(song.genre)
+        nil
+      else
+        @new_array << song.genre
+      end
+    }
+    @new_array 
+  end
 end

@@ -53,7 +53,7 @@ class Artist
   def genres
     new_array = []
     @songs.each(){|song|
-      
+      if new_array song.
     }
   end
   ###End of Instance Methods###

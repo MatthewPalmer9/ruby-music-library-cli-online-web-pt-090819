@@ -33,6 +33,14 @@ class Song
       end
     }
   end
+
+  def self.find_or_create_by_name(song_name)
+    if self.all.include?(song_name)
+      song_name
+    else
+      self.all << Song.new(song_name)
+    end 
+  end
 ###End of Class Methods###
 
 ###Beginning of Instance Methods###

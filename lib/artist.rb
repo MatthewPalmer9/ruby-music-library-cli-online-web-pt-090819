@@ -31,10 +31,10 @@ class Artist
     @@all << self
   end
 
-  def add_song(song)
-    new_song = Song.new(song)
+  def add_song(new_song)
+    song = Song.new(new_song)
     #new_song.artist = self
-    new_song.artist = self.name
+    song.artist = self.name
     #binding.pry
   end
   ###End of Instance Methods###

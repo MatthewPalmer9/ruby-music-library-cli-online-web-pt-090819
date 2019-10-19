@@ -23,7 +23,7 @@ class MusicLibraryController
       puts "What would you like to do?"
 
       case input
-        
+      
 
   end
 end

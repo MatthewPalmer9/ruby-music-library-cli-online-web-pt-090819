@@ -4,7 +4,7 @@ require_relative "../config/environment.rb"
 
 class Artist
   attr_accessor :name, :song
-  # extend Concerns::Findable
+  extend Concerns::Findable
 
   @@all = []
 

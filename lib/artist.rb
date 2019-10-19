@@ -41,7 +41,8 @@ class Artist
       nil
     else
       @song << song
-    end 
+    end
+    song 
     #binding.pry
   end
   ###End of Instance Methods###

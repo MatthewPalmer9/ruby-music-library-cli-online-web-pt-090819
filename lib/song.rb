@@ -29,7 +29,7 @@ class Song
   def self.find_by_name(song_name)
     self.all.each(){|song|
       if song.name == song_name
-        song_name
+        song.name
       end
     }
   end
